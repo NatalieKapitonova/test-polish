@@ -5,7 +5,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "./layout";
 import Home from "./home";
 import Dates from "./dates";
-import { basename } from "config";
+import { basename } from "./config";
 // const Dates = lazy(() => import("./dates"));
 
 const MyRouter = () => (
