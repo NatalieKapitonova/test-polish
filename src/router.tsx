@@ -6,13 +6,13 @@ import Layout from "./layout";
 import Home from "./home";
 import Dates from "./dates";
 import { basename } from "./config";
-// const Dates = lazy(() => import("./dates"));
 
+console.log("BASENAME");
+console.log(basename);
 const MyRouter = () => (
   <Layout>
     <Routes>
       <Route path="/" element={<Home />} />
-
       <Route path="/dates" element={<Dates />} />
     </Routes>
   </Layout>
