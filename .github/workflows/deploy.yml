@@ -15,6 +15,8 @@ jobs:
           node-version: 14
       - run: yarn
       - run: yarn test
+      - name: CSS
+        run: yarn cssProd
       - name: Build page
         run: VITE_GIT_SHA=$GITHUB_SHA VITE_VERSION=${GITHUB_REF##*/} yarn build
       - name: add 404
