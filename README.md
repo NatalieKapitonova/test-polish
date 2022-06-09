@@ -1,7 +1,3 @@
-# Boilerplate for Vite Project
+# Polish Test
 
-[![Test](https://github.com/nexys-system/boilerplate_vite/actions/workflows/test.yml/badge.svg)](https://github.com/nexys-system/boilerplate_vite/actions/workflows/test.yml)
-
-## Get started
-
-![get started](./recording.gif)
+[![Test](https://github.com/NatalieKapitonova/test-polish/actions/workflows/test.yml/badge.svg)](https://github.com/NatalieKapitonova/test-polish/actions/workflows/test.yml)
