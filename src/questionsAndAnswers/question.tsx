@@ -55,6 +55,8 @@ export default ({ area }: { area: Area | null }) => {
 
   useEffect(() => {
     setData([...getData(area as Area)]);
+    setCurrent(0);
+    setShowAnswer(false);
   }, [area]);
 
   if (!data) {

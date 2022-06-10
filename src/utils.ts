@@ -34,3 +34,24 @@ export const getRandomBetweenUnique = (
   const shuffled = shuffle(arr);
   return shuffled.slice(0, length);
 };
+
+export const mapEnumOntoOptions = (list: any): { id: number; name: string }[] =>
+  Object.entries(list)
+    .filter(([k]) => !isNaN(Number(k)))
+    .map(([k, v]) => {
+      return { id: Number(k), name: String(v) };
+    });
+
+export const getEnumKeyByValue = (list: any, id: number): string => {
+  const item = Object.entries(list)
+    .filter(([k]) => !isNaN(Number(k)))
+    .find(([k, _v]) => Number(k) === id);
+  if (!item) {
+    return "";
+  }
+  return item[1] as string;
+};
+
+// export const getStringFromOptionset = (list: any, id: number) => {
+//   return camelCaseToStr(getEnumKeyByValue(list, id));
+// };

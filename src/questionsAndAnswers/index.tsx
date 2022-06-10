@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Question from "./question";
+import { mapEnumOntoOptions } from "../utils";
 
 enum Area {
   geo = "geo",
@@ -10,54 +11,28 @@ enum Area {
   history = "history",
 }
 
-const labelClasses = `px-3 py-2 rounded-full cursor-pointer border-2`;
-const activeClass = `bg-secondary-600 text-white border-secondary-600`;
-const inactiveClass = `bg-white border-primary-600`;
+const labelClasses = `px-2 py-1 rounded-full cursor-pointer border-2`;
+const activeClass = `bg-secondary-600 text-white border-secondary-600 hover:bg-secondary-500`;
+const inactiveClass = `bg-white border-primary-600 hover:bg-primary-100`;
+
+const arr = ["geo", "culture", "personas", "history", "misc"];
+console.log(arr);
 export default () => {
-  const [area, setArea] = useState<Area | null>(null);
+  const [area, setArea] = useState<Area | null>(Area.geo);
   return (
     <div className="bg-white rounded-lg shadow p-5 text-center">
       <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-        <div
-          className={`${labelClasses} ${
-            area === Area.geo ? activeClass : inactiveClass
-          }`}
-          onClick={() => setArea(Area.geo)}
-        >
-          Geogrpahy
-        </div>
-        <div
-          className={`${labelClasses} ${
-            area === Area.culture ? activeClass : inactiveClass
-          }`}
-          onClick={() => setArea(Area.culture)}
-        >
-          Culture
-        </div>
-        <div
-          className={`${labelClasses} ${
-            area === Area.personas ? activeClass : inactiveClass
-          }`}
-          onClick={() => setArea(Area.personas)}
-        >
-          People
-        </div>
-        <div
-          className={`${labelClasses} ${
-            area === Area.history ? activeClass : inactiveClass
-          }`}
-          onClick={() => setArea(Area.history)}
-        >
-          History
-        </div>
-        <div
-          className={`${labelClasses} ${
-            area === Area.misc ? activeClass : inactiveClass
-          }`}
-          onClick={() => setArea(Area.misc)}
-        >
-          Other
-        </div>
+        {arr.map((v) => (
+          <div
+            key={v}
+            className={`${labelClasses} ${
+              area === v ? activeClass : inactiveClass
+            }`}
+            onClick={() => setArea(v as Area)}
+          >
+            {v === "misc" ? "other" : v}
+          </div>
+        ))}
       </div>
       <Question area={area} />
     </div>
