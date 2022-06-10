@@ -93,7 +93,13 @@ export default () => {
         <Score wrongCtn={wrongCtn} correctCtn={correctCt} />
       </div>
 
-      <h1>{data[current].label}</h1>
+      <h1>
+        {data[current].label.split("\n").map((a, i) => (
+          <div key={i} className="mb-2">
+            {a}
+          </div>
+        ))}
+      </h1>
 
       <br />
       {data[current].answers.map((a, i) => (

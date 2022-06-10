@@ -58,6 +58,16 @@ export default () => {
         </div>
         <div className="mr-3 md:mr-5">
           <Link
+            to="/kings"
+            className={` ${
+              pathname.includes("/kings") && "text-secondary-600"
+            } hover:text-primary-600`}
+          >
+            Kings
+          </Link>
+        </div>
+        <div className="mr-3 md:mr-5">
+          <Link
             to="/personas"
             className={` ${
               pathname.includes("/personas") && "text-secondary-600"

@@ -65,7 +65,16 @@ export default ({ area }: { area: Area | null }) => {
     <div className="mt-5">
       <div className="font-semibold	">{data[current].title}</div>
       <br />
-      {showAnswer && <div>{data[current].answer}</div>}
+      {showAnswer && (
+        <div>
+          {data[current].answer
+            .toString()
+            .split("\n")
+            .map((a, i) => (
+              <div key={i}>{a}</div>
+            ))}
+        </div>
+      )}
       {showAnswer && <div>{data[current].comment}</div>}
       <br />
       <ActionButton

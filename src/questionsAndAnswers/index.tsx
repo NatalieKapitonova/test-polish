@@ -17,7 +17,7 @@ export default () => {
   const [area, setArea] = useState<Area | null>(null);
   return (
     <div className="bg-white rounded-lg shadow p-5 text-center">
-      <div className="grid grid-cols-5 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
         <div
           className={`${labelClasses} ${
             area === Area.geo ? activeClass : inactiveClass
