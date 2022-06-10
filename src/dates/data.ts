@@ -1,5 +1,7 @@
 import datesRaw from "./dates.json";
 
+import * as Utils from "../utils";
+
 interface Answer {
   id: number;
   label: string | number;
@@ -11,46 +13,22 @@ interface Question {
   answers: Answer[];
 }
 
-const getRandomBetween = (min: number, max: number) => {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
-
-const shuffle = <T>(array: T[]): T[] => {
-  let currentIndex = array.length,
-    randomIndex;
-
-  // While there remain elements to shuffle.
-  while (currentIndex != 0) {
-    // Pick a remaining element.
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
-
-  return array;
-};
-
 const getFakeAnwers = (currAnswer: number | string): Answer[] => {
   if (isNaN(Number(currAnswer))) {
     // custom date e.g. mid century
-    const val1 = getRandomBetween(500, 700);
-    const val2 = getRandomBetween(500, 700);
+    const val1 = Utils.getRandomBetween(500, 700);
+    const val2 = Utils.getRandomBetween(500, 700);
     return [
       { id: 2, label: val1, isCorrect: false },
       { id: 3, label: val2, isCorrect: false },
     ];
   }
   // correct answer is a numeric date - so generate something in between
-  const val1 = getRandomBetween(
+  const val1 = Utils.getRandomBetween(
     Number(currAnswer) - 20,
     Number(currAnswer) + 20
   );
-  const val2 = getRandomBetween(
+  const val2 = Utils.getRandomBetween(
     Number(currAnswer) - 25,
     Number(currAnswer) + 25
   );
@@ -71,9 +49,9 @@ export const getQuestions = (): Question[] => {
     return {
       label: dateRaw.Event,
       id: i + 1,
-      answers: shuffle(answers),
+      answers: Utils.shuffle(answers),
     };
   });
 
-  return shuffle(arr);
+  return Utils.shuffle(arr);
 };
