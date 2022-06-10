@@ -22,11 +22,11 @@ export const getPersonas = (): Question[] => {
   const names = getNames();
   const arr: Question[] = raw.map((person, i) => {
     const idx = names.findIndex((n) => n === person.author);
-    const idx1 = idx > step ? idx - step : idx;
-    const idx2 = idx < names.length - (step + 1) ? idx + step : idx;
+    const idx1 = idx > step ? idx - step : 0;
+    const idx2 =
+      idx < names.length - (step + 1) ? idx + step : names.length - 1;
 
-    const val1 = U.getRandomBetween(idx1, idx2);
-    const val2 = U.getRandomBetween(idx1, idx2);
+    const [val1, val2] = U.getRandomBetweenUnique(idx1, idx2, idx);
     const answers: Answer[] = [
       { id: 1, isCorrect: true, title: person.author },
       { id: 2, isCorrect: false, title: names[val1] },

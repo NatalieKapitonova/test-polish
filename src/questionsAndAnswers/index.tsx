@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
 
 import Question from "./question";
 
@@ -17,7 +16,7 @@ const inactiveClass = `bg-white border-primary-600`;
 export default () => {
   const [area, setArea] = useState<Area | null>(null);
   return (
-    <div className="bg-white rounded-large p-5">
+    <div className="bg-white rounded-lg shadow p-5 text-center">
       <div className="grid grid-cols-5 gap-3">
         <div
           className={`${labelClasses} ${

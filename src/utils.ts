@@ -21,3 +21,16 @@ export const shuffle = <T>(array: T[]): T[] => {
 
   return array;
 };
+
+export const getRandomBetweenUnique = (
+  min: number,
+  max: number,
+  exclude?: number,
+  length: number = 2
+): number[] => {
+  const arr = Array.from({ length: max - min + 1 }, (_v, k) => k + min).filter(
+    (f) => !exclude || f !== exclude
+  );
+  const shuffled = shuffle(arr);
+  return shuffled.slice(0, length);
+};

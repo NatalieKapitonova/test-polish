@@ -15,14 +15,21 @@ export default () => {
   const { pathname } = useLocation();
 
   return (
-    <div className="fixed w-full flex items-center justify-between h-14 z-10 shadow-md bg-white">
-      <div className="flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 bg-white dark:bg-gray-800 border-none">
-        <div className="flex items-center">
-          <Link to="/">Test Polish</Link>
+    <div className="fixed w-full flex items-center justify-between h-14 z-10 shadow-md bg-white max-w-screen overflow-scroll">
+      <div className="hidden md:block ">
+        <div className="flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 bg-white dark:bg-gray-800  border-r border-secondary">
+          <div className="flex items-center">
+            <Link to="/">Test Polish</Link>
+          </div>
         </div>
       </div>
-      <div className="pl-4 flex items-start justify-start w-full border-l border-secondary">
-        <div className="mx-5">
+      <div className="block md:hidden">
+        <Link to="/">
+          <i className="fa-solid fa-home text-primary-600 ml-4" />
+        </Link>
+      </div>
+      <div className="md:pl-4 flex items-start justify-start w-full">
+        <div className="mx-3 md:mx-5">
           <Link
             to="/dates"
             className={`
@@ -32,7 +39,7 @@ export default () => {
             Dates
           </Link>
         </div>
-        <div className="mr-5">
+        <div className="mr-3 md:mr-5">
           <Link
             to="/holidays"
             className={` ${
@@ -42,7 +49,7 @@ export default () => {
             Holidays
           </Link>
         </div>
-        <div className="mr-5">
+        <div className="mr-3 md:mr-5">
           <Link
             to="/personas"
             className={` ${
@@ -52,7 +59,7 @@ export default () => {
             People
           </Link>
         </div>
-        <div className="mr-5">
+        <div className="mr-3 md:mr-5">
           <Link
             to="/questions"
             className={` ${

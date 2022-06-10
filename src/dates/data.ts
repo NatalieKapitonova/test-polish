@@ -1,6 +1,7 @@
 import datesRaw from "./dates.json";
 
 import * as Utils from "../utils";
+import { getRandomBetweenUnique } from "../utils";
 
 interface Answer {
   id: number;
@@ -13,37 +14,21 @@ interface Question {
   answers: Answer[];
 }
 
-const getFakeAnwers = (currAnswer: number | string): Answer[] => {
-  if (isNaN(Number(currAnswer))) {
-    // custom date e.g. mid century
-    const val1 = Utils.getRandomBetween(500, 700);
-    const val2 = Utils.getRandomBetween(500, 700);
-    return [
-      { id: 2, label: val1, isCorrect: false },
-      { id: 3, label: val2, isCorrect: false },
-    ];
-  }
-  // correct answer is a numeric date - so generate something in between
-  const val1 = Utils.getRandomBetween(
-    Number(currAnswer) - 20,
-    Number(currAnswer) + 20
-  );
-  const val2 = Utils.getRandomBetween(
-    Number(currAnswer) - 25,
-    Number(currAnswer) + 25
-  );
-  return [
-    { id: 2, label: val1, isCorrect: false },
-    { id: 3, label: val2, isCorrect: false },
-  ];
-};
-
+const getDates = () => datesRaw.map((d) => d.Date);
+const step = 10;
 export const getQuestions = (): Question[] => {
+  const dates = getDates();
   const arr = datesRaw.map((dateRaw, i) => {
-    const fakeAnswers = getFakeAnwers(dateRaw.Date);
+    const idx = dates.findIndex((n) => n === dateRaw.Date);
+    const idx1 = idx > step ? idx - step : 0;
+    const idx2 =
+      idx < dates.length - (step + 1) ? idx + step : dates.length - 1;
+
+    const [val1, val2] = getRandomBetweenUnique(idx1, idx2, idx);
     const answers = [
-      ...fakeAnswers,
       { id: 1, label: dateRaw.Date, isCorrect: true },
+      { id: 2, label: dates[val1], isCorrect: false },
+      { id: 3, label: dates[val2], isCorrect: false },
     ];
 
     return {

@@ -3,6 +3,7 @@ import rawCulture from "./json/culture.json";
 import rawHistory from "./json/history.json";
 import rawPersonas from "./json/personas.json";
 import rawMisc from "./json/misc.json";
+import { shuffle } from "../utils";
 
 export interface Question {
   title: string;
@@ -35,9 +36,11 @@ const getRaw = (a: Area): Raw[] => {
 export const getData = (a: Area): Question[] => {
   const raw = getRaw(a);
 
-  return raw.map((r) => ({
+  const arr = raw.map((r) => ({
     title: r.question,
     answer: r.answer,
     comment: r.comment,
   }));
+
+  return shuffle(arr);
 };

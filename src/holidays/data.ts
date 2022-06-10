@@ -26,8 +26,7 @@ export const getHolidays = (): Question[] => {
     const idx1 = idx > step ? idx - step : idx;
     const idx2 = idx < dates.length - (step + 1) ? idx + step : idx;
 
-    const val1 = U.getRandomBetween(idx1, idx2);
-    const val2 = U.getRandomBetween(idx1, idx2);
+    const [val1, val2] = U.getRandomBetweenUnique(idx1, idx2, idx);
     const answers: Answer[] = [
       { id: 1, isCorrect: true, date: holiday.date },
       { id: 2, isCorrect: false, date: dates[val1] },

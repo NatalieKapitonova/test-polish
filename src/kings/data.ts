@@ -24,8 +24,7 @@ export const getKings = (): Question[] => {
     const idx1 = idx > 20 ? idx - 20 : idx;
     const idx2 = idx < names.length - 21 ? idx + 20 : idx;
 
-    const val1 = U.getRandomBetween(idx1, idx2);
-    const val2 = U.getRandomBetween(idx1, idx2);
+    const [val1, val2] = U.getRandomBetweenUnique(idx1, idx2, idx);
     const answers: Answer[] = [
       { id: 1, isCorrect: true, title: king.king },
       { id: 2, isCorrect: false, title: names[val1] },

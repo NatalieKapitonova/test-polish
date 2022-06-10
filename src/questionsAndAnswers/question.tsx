@@ -63,7 +63,7 @@ export default ({ area }: { area: Area | null }) => {
 
   return (
     <div className="mt-5">
-      <div>Q: {data[current].title}</div>
+      <div className="font-semibold	">{data[current].title}</div>
       <br />
       {showAnswer && <div>{data[current].answer}</div>}
       {showAnswer && <div>{data[current].comment}</div>}

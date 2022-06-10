@@ -4,8 +4,8 @@ import { anthemPolish, anthemBel } from "./anthem";
 
 export default () => {
   return (
-    <div className="bg-white shadow rounded-large p-5">
-      <div className="grid md:grid-cols-2 gap-3">
+    <div className="bg-white shadow rounded-large p-5 mt-5 md:mt-1">
+      <div className="grid md:grid-cols-2 gap-3 text-center">
         <div>
           <h1 className="font-bold mb-2">Polish</h1>
           <div
