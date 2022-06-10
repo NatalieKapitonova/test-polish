@@ -22,7 +22,7 @@ const MyRouter = () => (
       <Route path="/dates" element={<Dates />} />
       <Route path="/kings" element={<Kings />} />
       <Route path="/holidays" element={<Holidays />} />
-      <Route path="/personans" element={<Personas />} />
+      <Route path="/personas" element={<Personas />} />
       <Route path="/anthem" element={<Anthem />} />
       <Route path="/questions" element={<QandA />} />
     </Routes>
