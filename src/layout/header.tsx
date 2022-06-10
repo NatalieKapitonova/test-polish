@@ -20,11 +20,11 @@ export default () => {
         <div className="flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 bg-white dark:bg-gray-800  border-r border-secondary">
           <div className="flex items-center">
             <Link to="/">
-              <img
+              {/* <img
                 src="/assets/SVG/logo.svg"
                 width="20px"
                 className="inline mb-1 mr-3"
-              />{" "}
+              />{" "} */}
               Test Polish
             </Link>
           </div>
