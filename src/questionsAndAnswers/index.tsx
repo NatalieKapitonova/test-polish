@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import Question from "./question";
-import { mapEnumOntoOptions } from "../utils";
 
 enum Area {
   geo = "geo",
@@ -16,7 +15,7 @@ const activeClass = `bg-secondary-600 text-white border-secondary-600 hover:bg-s
 const inactiveClass = `bg-white border-primary-600 hover:bg-primary-100`;
 
 const arr = ["geo", "culture", "personas", "history", "misc"];
-console.log(arr);
+
 export default () => {
   const [area, setArea] = useState<Area | null>(Area.geo);
   return (
