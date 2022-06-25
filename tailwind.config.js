@@ -2,9 +2,6 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   theme: {
-    minWidth: {
-      64: "16rem",
-    },
     colors: {
       ...colors,
       primary: {
@@ -22,10 +19,6 @@ module.exports = {
       },
       success: {
         ...colors.green,
-      },
-      warning: {
-        ...colors.amber,
-        DEFAULT: colors.amber["400"],
       },
     },
     extend: {

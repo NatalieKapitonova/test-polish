@@ -15,6 +15,7 @@ interface Raw {
   question: string;
   answer: string | number;
   comment?: string | null;
+  language?: string;
 }
 
 export type Area = "geo" | "culture" | "history" | "personas" | "misc";
@@ -36,11 +37,17 @@ const getRaw = (a: Area): Raw[] => {
 export const getData = (a: Area): Question[] => {
   const raw = getRaw(a);
 
-  const arr = raw.map((r) => ({
-    title: r.question,
-    answer: r.answer,
-    comment: r.comment,
-  }));
+  const language = window.localStorage.getItem("language") || "ru";
+  console.log(language);
+  console.log(raw);
+
+  const arr = raw
+    .filter((r) => !r.language || r.language === language)
+    .map((r) => ({
+      title: r.question,
+      answer: r.answer,
+      comment: r.comment,
+    }));
 
   return shuffle(arr);
 };

@@ -3,12 +3,12 @@ import datesRaw from "./dates.json";
 import * as Utils from "../utils";
 import { getRandomBetweenUnique } from "../utils";
 
-interface Answer {
+export interface Answer {
   id: number;
   label: string | number;
   isCorrect: boolean;
 }
-interface Question {
+export interface Question {
   id: number;
   label: string;
   answers: Answer[];

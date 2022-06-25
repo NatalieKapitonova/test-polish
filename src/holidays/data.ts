@@ -16,11 +16,17 @@ interface Answer {
   isCorrect: boolean;
 }
 
-const getDates = () => raw.map((r) => r.date);
+const getDates = () =>
+  raw
+    .filter(
+      (r) => r.language === window.localStorage.getItem("language") || "ru"
+    )
+    .map((r) => r.date);
 const step = 10;
 
 export const getHolidays = (): Question[] => {
   const dates = getDates();
+
   const arr: Question[] = raw.map((holiday, i) => {
     const idx = dates.findIndex((n) => n === holiday.date);
     const idx1 = idx > step ? idx - step : idx;

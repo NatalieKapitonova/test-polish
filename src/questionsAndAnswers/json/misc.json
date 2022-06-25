@@ -2,116 +2,277 @@
  {
   "question": "Какие политические партии вы знаете",
   "answer": "Право и справедливость, Платформа",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Польские пословицы",
   "answer": "Apetyt rośnie w miarę jedzenia.  \n\nCo dwie głowy, to nie jedna  \n\nCo za dużo to niezdrowo  \n\nDo wesela się zagoi. \n\n\nMałe dzieci – mały kłopot, duże dzieci – duży kłopot",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Административный раздел в Польше",
   "answer": "Административное строение Польши трёхуровневое: страна делится на воеводства (польск. województwo), воеводства — на поветы (польск. powiat), поветы — на гмины (польск. gmina). \n\n16 воеводств, 379 поветов, и 2479 гмин",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Что случилось с Попелем",
   "answer": "Его съели мыши (плохо заботился о народе, отравил подданых, только охотился, был плохой король)",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Какой политический строй в Польше",
   "answer": "Демократический",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Дата вступления Польши в НАТО",
   "answer": "12 марта 1999",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Какие польские танцы вы знаете",
   "answer": "Полька, Полонез, Краковяк, Мазурек",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Что такое оплатек",
   "answer": "Очень тонкий лист с белого хлеба, пресный (т.е. пресный и несоленое), запеченный с белой муки и воды без добавления дрожжей, которым делятся христиане собравшись за Рождественским столом (на Вигилию), загадав желание",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Что такое Пастерка, служба Пастерская",
   "answer": "Торжественная Святая Служба в ночное время (как правило, в полночь или вечером) с 24 по 25 декабря",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Что такое Швенцонка",
   "answer": "Продукты (в основном мясо, яйца, хрен, хлеб и т.д.) освященные в Великую субботу (перед пасхой) в костеле",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Что за обычай Топеня Мажани",
   "answer": "Отмечается 21 марта, т.е. в первый день весеннего календаря, прощания с зимой, начало весны. В этот день они топят чучело Marzanna в реке, что символизирует таяние зимы в реке",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Что такое жирный четверг",
   "answer": "Последний четверг перед великим постом (перед пасхой). В этот день разрешено объедаться. Самое популярное блюдо это пончики",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Кто написал ROTA",
   "answer": "Мария Конопницка \n\n1908 год  \n\nНаписана в знак протеста против политики Германской империи по насильственной германизации поляков \n\nНе только стихотворение, на нее написан гимн (который считается одной из ключевых песен Польши наряду с мазуркой Домбровского)",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Какие есть национальные символы",
   "answer": "Белый Орел, бело-красные цвета и гимн «Мазурка Домбровского»",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Какие польские легенды знаете",
   "answer": "Легенда как Попеля съели мыши (плохо обращался с народом, за что был съеден мышами) \n\nЛегенда про Варшавскую сирену\/русалку (русалка была словлена купцом для продажи, рыбацкий сын ее освободил, за что русалка отблагодарила – можно позвать и она придет на помощь; русалка – на гербе Варшавы)",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Кем был Николай Коперник",
   "answer": "Астроном, который доказал что земля крутится вокруг солнца, а не солнце вокруг земли. Своё открытие опубликовал в работе \" О вращениях небесных тел\"",
-  "comment": "1473-1543"
+  "comment": "1473-1543",
+  "language": "ru"
  },
  {
   "question": "Кем был Ян Павел II",
   "answer": "Ян Павел - Кароль Войтыла - был Папа Римский.  \n\nЖил в годах 1920 – 2005 \n\nПапой был с 16 октября 1978 года до 2 апреля 2005",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Кем был Галл Аноним",
   "answer": "Был автором первой польской хроники на латинском языке",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Кто такой Лех Валенса",
   "answer": "Президент Польши в годах 1990 - 1995. Лауреат Мирной Нобелевской премии. Один из основателей и первый лидер Солидарности",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Кто с президентов Польши был два раза номинирован",
   "answer": "Александр Квашневський (23 декабря 1995 – 23 декабря 2005) \n\nАнджей Дуда (с 6 августа 2015 года – сейчас; переизбран в 2020 году)",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Кто такой Пилецкий Витольд",
   "answer": "Военный, ротмистр Войска Польского \n\n1901-1948 \n\nСимвол сопротивления польского народа сначала германскому, а затем советскому оккупационным режимам \n\nорганизатор движения сопротивления в концентрационном лагере Освенцим \n\nбыл казнен по обвинению в шпионаже в 1948",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Кто такой Попелюшко Ежи",
   "answer": "1947-1984 \n\nпольский римско-католический священник \n\nактивный сторонник профсоюза «Солидарность»  \n\nстал известен по всей Польше своей бескомпромиссной позицией против режима \n\nЕго убийство сотрудниками Службы безопасности МВД Польской народной республики вызвало большой резонанс \n\nпричислен к лику блаженных в 2010",
-  "comment": null
+  "comment": null,
+  "language": "ru"
  },
  {
   "question": "Кто такая Ожешко Элиза",
   "answer": "польскоязычная писательница и общественный деятель \n\n1841-1910 \n\nРоман «Над Неманом»  \n\nВ 1905 году выдвигалась на Нобелевскую премию по литературе (как и Лев Толстой), но её получил Генрик Сенкевич",
-  "comment": null
+  "comment": null,
+  "language": "ru"
+ },
+ {
+  "question": "Jakie znasz partie polityczne?",
+  "answer": "Prawo i Sprawiedliwość, Platforma",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Polskie przysłowania",
+  "answer": "Apetyt rośnie w miarę jedzenia.  \n\nCo dwie głowy, to nie jedna  \n\nCo za dużo to niezdrowo  \n\nDo wesela się zagoi. \n\n\nMałe dzieci – mały kłopot, duże dzieci – duży kłopot",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Podział administracyjny w Polsce",
+  "answer": "Struktura administracyjna Polski jest trójpoziomowa: kraj podzielony jest na województwa (województwo polskie), województwa na powiaty (powiat polski), powiaty na gminy (gmina polska).\n\n16 województw, 379 powiatów i 2479 gmin",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Co się stało z Popelem?",
+  "answer": "Był zjadany przez myszy (słabo dbał o ludzi, otruł swoich poddanych, tylko polował, był zły król)",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Jaki jest system polityczny w Polsce?",
+  "answer": "Demokratyczny",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "\nData przystąpienia Polski do NATO",
+  "answer": "12 marca 1999",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Jakie znasz tańce polskie?",
+  "answer": "Polka, Polonez, Krakowiak, Mazurek",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Co jest opłatek?",
+  "answer": "Bardzo cienki płat białego chleba, przaśnego (czyli niesolonego i niesolonego), zapiekany z białej mąki i wody bez dodatku drożdży, którym dzielą się chrześcijanie zebrani na wigilijnym stole (na wigilię), składając życzenie",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Czym jest Pasteurka, Usługa Pasteura?",
+  "answer": "Uroczyste nabożeństwo święte w nocy (zwykle o północy lub wieczorem) od 24 do 25 grudnia",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Czym jest Święconka?",
+  "answer": "Produkty (głównie mięso, jajka, chrzan, chleb itp.) konsekrowane w Wielką Sobotę (przed Wielkanocą) w kościele",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Jaki jest zwyczaj Topenyi Mazhani?",
+  "answer": "Obchodzony jest 21 marca, tj. w pierwszy dzień wiosennego kalendarza, pożegnanie zimy, początek wiosny. W tym dniu topią w rzece wizerunek Marzanny, który symbolizuje topnienie zimy w rzece.",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Czym jest Tłusty Czwartek?",
+  "answer": "W ostatni czwartek przed Wielkim Postem (przed Wielkanocą). W tym dniu wolno się przejadać. Najpopularniejszym jedzeniem są pączki.",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Kto napisał ROTA?",
+  "answer": "Maria Konopnicka\n\n1908\n\nNapisany w proteście przeciwko polityce Cesarstwa Niemieckiego w sprawie przymusowej germanizacji Polaków\n\nNapisano do niego nie tylko wiersz, hymn (który obok mazurka Dąbrowskiego uważany jest za jedną z kluczowych pieśni Polski)",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Jakie są symbole narodowe?",
+  "answer": "Orzeł Biały, barwy biało-czerwone i hymn „Mazurek Dąbrowskiego”",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Jakie znasz polskie legendy?",
+  "answer": "Legenda o tym, jak Popel został zjedzony przez myszy (znęcał się nad ludźmi, za których został zjedzony przez myszy)\n\nLegenda o warszawskiej syrenie\/syrence (syrena została złapana przez kupca na sprzedaż, syn rybaka uwolnił ją, za co syrena jej podziękowała - można zadzwonić, a przybędzie na ratunek; syrenka jest na płaszczu herb Warszawy)",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "\nKim był Mikołaj Kopernik?",
+  "answer": "\nAstronom, który udowodnił, że Ziemia krąży wokół Słońca, a nie Słońce wokół Ziemi. Opublikował swoje odkrycie w pracy „O obrotach ciał niebieskich”",
+  "comment": "1473-1543",
+  "language": "pl"
+ },
+ {
+  "question": "\nKim był Jan Paweł II?",
+  "answer": "Papieżem był Jan Paweł – Karol Wojtyła.\n\nMieszkał w latach 1920 - 2005\n\nPapież był od 16 października 1978 do 2 kwietnia 2005",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Kim był Gall Anonim?",
+  "answer": "\nBył autorem pierwszej polskiej kroniki po łacinie",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Kim jest Lech Wałęsa?",
+  "answer": "\nPrezydent RP w latach 1990 - 1995. Laureat Pokojowej Nagrody Nobla. Jeden z założycieli i pierwszy lider Solidarności",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "\nKtóry z prezydentów Polski był dwukrotnie nominowany?",
+  "answer": "\nAleksander Kwaszniewski (23 grudnia 1995 - 23 grudnia 2005)\n\nAndrzej Duda (od 06.08.2015 - teraz; ponownie wybrany w 2020)",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "\nKim jest Witold Pilecki?",
+  "answer": "Oficer wojskowy, kapitan Wojska Polskiego\n\n1901-1948\n\nSymbolem oporu narodu polskiego, najpierw niemieckiemu, a potem sowieckim reżimom okupacyjnym\n\norganizator ruchu oporu w obozie koncentracyjnym Auschwitz\n\nzostał stracony pod zarzutem szpiegostwa w 1948 r.",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Kim jest Popelyushko Jerzy?",
+  "answer": "1947-1984\n\npolski ksiądz rzymsko-katolicki\n\naktywny zwolennik związku zawodowego „Solidarność”\n\nstał się znany w całej Polsce ze swojej bezkompromisowej postawy wobec reżimu\n\nJego zabójstwo dokonane przez funkcjonariuszy Służby Bezpieczeństwa MSW PRL wywołało wielkie oburzenie\n\nbeatyfikowana w 2010 r.",
+  "comment": null,
+  "language": "pl"
+ },
+ {
+  "question": "Kim jest Eliza Ożeszko?",
+  "answer": "\npolskojęzyczny pisarz i działacz społeczny\n\n1841-1910\n\nPowieść „Nad Niemnem”\n\nW 1905 była nominowana do literackiej Nagrody Nobla (podobnie jak Lew Tołstoj), ale otrzymał ją Henryk Sienkiewicz",
+  "comment": null,
+  "language": "pl"
  }
 ]

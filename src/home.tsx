@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Card = ({ title, Icon }: { title: string; Icon: JSX.Element }) => {
   return (
@@ -15,19 +16,30 @@ const Card = ({ title, Icon }: { title: string; Icon: JSX.Element }) => {
   );
 };
 
+/**
+ *  
+  "importantDates": "Важные даты",
+  "polishHolidays": "Польские праздники",
+  "polishKings": "Польские короли",
+  "importantPeople": "Важные люди",
+  "polishAnthem": "Польский гимн",
+  "generalQuestions": "Общие вопросы"
+ */
+
 export default () => {
+  const { t }: { t: (s: string) => string } = useTranslation();
   return (
     <div className="bg-white w-full shadow p-10 rounded-lg text-center">
       <h1 className="text-primary-800 text-xl uppercase font-bold">
-        Welcome to Polish Culture Training!
+        {t("welcome")}
       </h1>
-      <small>Select what you would like to train</small>
+      <small>{t("welcomeInfo")}</small>
       <br />
       <br />
       <div className="grid md:grid-cols-2 gap-3 mt-2 md:mt-5">
         <Link to="/dates">
           <Card
-            title="Important dates"
+            title={t("importantDates")}
             Icon={
               <i className="fa-solid fa-calendar  text-white text-xl w-10"></i>
             }
@@ -35,19 +47,19 @@ export default () => {
         </Link>
         <Link to="/kings">
           <Card
-            title="Polish Kings"
+            title={t("polishKings")}
             Icon={<i className="fa-solid fa-crown text-white text-xl w-10"></i>}
           />
         </Link>
         <Link to="/holidays">
           <Card
-            title="Polish holidays"
+            title={t("polishHolidays")}
             Icon={<i className="fa-solid fa-gift  text-white text-xl w-10"></i>}
           />
         </Link>
         <Link to="/personas">
           <Card
-            title="Important People"
+            title={t("importantPeople")}
             Icon={
               <i className="fa-solid fa-person text-white text-xl w-10"></i>
             }
@@ -55,13 +67,13 @@ export default () => {
         </Link>
         <Link to="/anthem">
           <Card
-            title="Polish Anthem"
+            title={t("polishAnthem")}
             Icon={<i className="fa-solid fa-drum text-white text-xl w-10"></i>}
           />
         </Link>
         <Link to="/questions">
           <Card
-            title="General questions"
+            title={t("generalQuestions")}
             Icon={
               <i className="fa-solid fa-question text-white text-xl w-10"></i>
             }

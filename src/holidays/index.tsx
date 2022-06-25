@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { getHolidays } from "./data";
+import { useTranslation } from "react-i18next";
 
 import Score from "../dates/score";
-import { Link } from "react-router-dom";
 
 import ActionButton from "../common/action-button";
 
@@ -13,6 +13,8 @@ export default () => {
   const [validate, setValidate] = useState<boolean>(false);
   const [correctCt, setCorrectCtn] = useState<number>(0);
   const [wrongCtn, setWrongCtn] = useState<number>(0);
+
+  const { t } = useTranslation();
 
   const getSuccessClasses = (isCorrect: boolean, selected: boolean) => {
     if (validate) {
@@ -55,7 +57,7 @@ export default () => {
     <div className="bg-white w-full shadow p-10 rounded-lg text-center">
       <div className="grid grid-cols-2">
         <small className="text-primary-500 text-left">
-          Question {current + 1} out of {data.length}
+          {t("question")} {current + 1} {t("outOf")} {data.length}
         </small>
         <Score wrongCtn={wrongCtn} correctCtn={correctCt} />
       </div>

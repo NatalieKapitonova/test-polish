@@ -1,16 +1,29 @@
-import React, { useState } from "react";
-import { getQuestions } from "./data";
+import React, { useState, useEffect } from "react";
+import { Question } from "./data";
+
+import * as D from "../interface/question/data";
 
 import Score from "./score";
 import ActionButton from "../common/action-button";
+import * as T from "../interface/types";
 
-const data = getQuestions();
 export default () => {
   const [current, setCurrent] = useState<number>(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [validate, setValidate] = useState<boolean>(false);
   const [correctCt, setCorrectCtn] = useState<number>(0);
   const [wrongCtn, setWrongCtn] = useState<number>(0);
+  const [data, setData] = useState<Question[] | null>(null);
+
+  useEffect(() => {
+    if (!data) {
+      D.getQuestionsByType("date").then((d) => setData(d));
+    }
+  }, [data]);
+
+  if (!data) {
+    return <></>;
+  }
 
   const getSuccessClasses = (isCorrect: boolean, selected: boolean) => {
     if (validate) {
