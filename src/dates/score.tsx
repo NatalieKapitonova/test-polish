@@ -8,7 +8,7 @@ export default ({
   wrongCtn: number;
   correctCtn: number;
 }) => {
-  const { t } = useTranslation();
+  const { t }: { t: (s: string) => string } = useTranslation();
   return (
     <div className="text-sm mb-3 text-right text-primary-500">
       {t("yourScore")}: <span className="text-primary-500">{correctCtn}</span> /{" "}

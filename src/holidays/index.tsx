@@ -14,7 +14,7 @@ export default () => {
   const [correctCt, setCorrectCtn] = useState<number>(0);
   const [wrongCtn, setWrongCtn] = useState<number>(0);
 
-  const { t } = useTranslation();
+  const { t }: { t: (s: string) => string } = useTranslation();
 
   const getSuccessClasses = (isCorrect: boolean, selected: boolean) => {
     if (validate) {
