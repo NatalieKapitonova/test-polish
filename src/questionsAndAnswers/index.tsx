@@ -21,7 +21,7 @@ export default () => {
   const [area, setArea] = useState<Area | null>(Area.geo);
   const { t } = useTranslation();
   return (
-    <div className="bg-white rounded-lg shadow p-5 text-center">
+    <div className="bg-white md:rounded-lg shadow p-5 text-center">
       <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
         {arr.map((v) => (
           <div

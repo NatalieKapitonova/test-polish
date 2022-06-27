@@ -54,7 +54,7 @@ export default () => {
   };
 
   return (
-    <div className="bg-white w-full shadow p-10 rounded-lg text-center">
+    <div className="bg-white w-full shadow p-4 md:p-10 md:rounded-lg text-center">
       <div className="grid grid-cols-2">
         <small className="text-primary-500 text-left">
           {t("question")} {current + 1} {t("outOf")} {data.length}

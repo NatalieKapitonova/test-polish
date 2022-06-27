@@ -6,8 +6,10 @@ export default ({ children }: { children: JSX.Element }) => {
   return (
     <div className="min-h-screen flex flex-col  flex-auto flex-shrink-0 antialiased  bg-primary-100 font-extralight">
       <Header />
-      <main className="content-area flex justify-center mt-10">
-        <div className="md:w-3/5 pt-5 md:pt-20 h-full">{children}</div>
+      <main className="content-area flex justify-center mt-3 md:mt-10">
+        <div className="md:w-3/5 md:pt-5 md:pt-20 h-full w-full">
+          {children}
+        </div>
       </main>
       <footer style={{ height: "50px" }} className="bg-primary-100 text-center">
         <small>Natalie Kapitonova &copy; {new Date().getFullYear()}</small>

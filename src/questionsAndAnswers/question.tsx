@@ -1,43 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
 import { Question, Area, getData } from "./data";
 import ActionButton from "../common/action-button";
-
-// const ActionButton = ({
-//   showAnswer,
-//   onClick,
-//   isLastQuestion,
-// }: {
-//   showAnswer: boolean;
-//   onClick: () => void;
-//   isLastQuestion: boolean;
-// }) => {
-//   if (isLastQuestion && showAnswer) {
-//     return (
-//       <Link
-//         to="/"
-//         className="px-4 py-2 rounded-full bg-secondary-600 text-white"
-//       >
-//         Finish
-//       </Link>
-//     );
-//   }
-//   return (
-//     <button
-//       onClick={onClick}
-//       className={`
-//       px-5 py-3 rounded-full
-//       ${
-//         !showAnswer
-//           ? "border-2 border-primary-600 bg-white hover:bg-primary-100 text-primary-600"
-//           : "bg-primary-600 text-white hover:bg-primary-500"
-//       }`}
-//     >
-//       {showAnswer ? "Next question" : "Check answer"}
-//     </button>
-//   );
-// };
 
 export default ({ area }: { area: Area | null }) => {
   if (!area) {

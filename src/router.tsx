@@ -13,8 +13,6 @@ import QandA from "./questionsAndAnswers";
 
 import { basename } from "./config";
 
-console.log("BASENAME");
-console.log(basename);
 const MyRouter = () => (
   <Layout>
     <Routes>
@@ -22,7 +20,7 @@ const MyRouter = () => (
       <Route path="/dates" element={<Dates />} />
       <Route path="/kings" element={<Kings />} />
       <Route path="/holidays" element={<Holidays />} />
-      <Route path="/personas" element={<Personas />} />
+      <Route path="/people" element={<Personas />} />
       <Route path="/anthem" element={<Anthem />} />
       <Route path="/questions" element={<QandA />} />
     </Routes>
