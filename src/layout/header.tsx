@@ -35,16 +35,15 @@ const linkTitles = [
 const MobileMenu = (props: { open: boolean; onCancel: () => void }) => {
   const { open, onCancel } = props;
 
-  console.log("rendetring?");
   return (
     <PopupMenu
       open={open}
       onCancel={onCancel}
       position={`z-10 w-64 left-2 top-14`}
     >
-      <div className="bg-primary-200">
+      <div className="bg-primary-100">
         {linkTitles.map((l, i) => (
-          <li key={i} onClick={onCancel}>
+          <li key={i} onClick={onCancel} className={` border-b`}>
             <LinkItem title={l} url={`/${l}`} />
           </li>
         ))}
